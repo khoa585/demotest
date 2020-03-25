@@ -1,0 +1,205 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+    background-image: url('https://storage.oxii.vn/Cache/Sites/OXII/Storage/Images/2019/10/22/1920/3-cach-tai-clash-of-clans-o-viet-nam-cho-android-va-ios-thumb.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 15vh;
+    background: #000000a6;
+    padding-left: 0!important;
+}
+.header_{
+    height: 15vh;
+}
+.wrapper{
+    height: 10vh;
+    border-right: 1px solid #fff;
+    top:20px;
+    position: relative;
+}
+.wrapper_{
+    height: 10vh;
+    border-right: 1px solid #fff;
+    top:20px;
+    position: relative;
+}
+li.nav-item {
+    cursor: pointer;
+}
+.meta__group {
+    color: #fff;
+    line-height: 60px;
+    font-weight: 600;
+}
+.content{
+    color: #fff;
+    line-height: 60px;
+    font-weight: 600;
+    left: 15%;
+    position: relative;
+}
+.content span{
+    color: #fff;
+    cursor: pointer;
+}
+li.nav-item {
+    padding: 0 20px;
+}
+li.nav-item .active{
+    border-bottom: 1px solid #fff;
+}
+.logo{
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    cursor: pointer;
+}
+.search {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+svg.MuiSvgIcon-root.fa-search {
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+}
+.distant{
+    height: 50px;
+}
+
+.proF {
+    width: 500px;
+    left: 5%;
+    position: relative;
+}
+.profile {
+    width: 96%;
+    background: #000000a6;
+    color: #fff;
+    padding: 10px 0;
+}
+.accordion .nameP{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+}
+.panel {
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    width: 450px;
+}
+svg.MuiSvgIcon-root.ExpandMoreIcon {
+    font-size: 2em;
+    position: relative;
+    top: -5px;
+    left: 20px;
+    cursor: pointer;
+}
+.visionF {
+    width: 500px;
+    left: 5%;
+    position: relative;
+}
+.vision {
+    width: 96%;
+    background: #000000a6;
+    color: #fff;
+    padding: 10px 0;
+    top: 20px;
+    position: relative;
+}
+.accordion .name_V{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+}
+.panel_V {
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    width: 450px;
+}
+svg.MuiSvgIcon-root.ExpandMoreIcon_V {
+    font-size: 2em;
+    position: relative;
+    top: -5px;
+    left: 35px;
+    cursor: pointer;
+}
+.MissionM {
+    width: 500px;
+    left: 5%;
+    position: relative;
+}
+.Mission {
+    width: 96%;
+    background: #000000a6;
+    color: #fff;
+    padding: 10px 0;
+    top: 40px;
+    position: relative;
+}
+.accordion .name_M{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+}
+.panel_M {
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    width: 450px;
+}
+svg.MuiSvgIcon-root.ExpandMoreIcon_M {
+    font-size: 2em;
+    position: relative;
+    top: -5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.showFrofile{
+    transform: rotate(180deg);
+    transition: 0.5s!important;
+}
+.closeFrofile{
+    transition: 0.5s!important;
+}
+.showPanel{
+    height: 200px;
+    color: #fff;
+    animation: example 0.5s;
+    animation-fill-mode: both;
+}
+.closePanel{
+    height: 0;
+    animation: examplee 0.5s;
+    animation-fill-mode: both;
+}
+@keyframes examplee{
+    from{position: relative;top: 1px;opacity: 1;} 
+    to{ position: relative;top: -30px;opacity: 0;}
+}
+@keyframes example{
+    from{ position: relative;top: -30px;left:-10px;opacity: 0;}
+	to{position: relative;top: 0px;left:0;opacity: 1;} 
+}
