@@ -3,13 +3,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { statecontext } from './../Body';
 function Mission() {
     const context = useContext(statecontext);
-    console.log(context)
     return (
         <div className="Mission">
             <div className="MissionM">
                 <div className="accordion">
                     <div className="proFile_">
-                        <span className="name_M">Mission </span>
+                        <span className="name_M">Mission</span>
                         <ExpandMoreIcon className={`ExpandMoreIcon_M ${context.state_.showM === true ? 'showFrofile' : 'closeFrofile'}`} onClick={() => context.dispatchstate({ type: 'showM' })}></ExpandMoreIcon>
                     </div>
                     <div className={`panel_M ${context.state_.showM === true ? 'showPanel' : 'closePanel'}`}>

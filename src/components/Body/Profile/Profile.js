@@ -9,7 +9,7 @@ import {statecontext} from './../Body';
                     <div className="proF">
                         <div className="accordion">
                             <div className="proFile_">
-                                <span className="nameP">profile </span>
+                                <span className="nameP">profile</span>
                                 <ExpandMoreIcon className={`ExpandMoreIcon ${context.state_.showF === true ? 'showFrofile' : 'closeFrofile'}`} onClick={() => context.dispatchstate({type : 'showF'})}></ExpandMoreIcon>
                             </div>
                             <div className={`panel ${context.state_.showF === true ? 'showPanel' : 'closePanel'}`}>

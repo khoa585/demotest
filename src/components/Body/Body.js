@@ -2,17 +2,18 @@ import React, { useReducer } from 'react';
 import Profile from './Profile/Profile';
 import Vision from './Vision/Vision';
 import Mission from './Mission/Mission';
-
 export const statecontext = React.createContext();
 const initialState = { showF: false, showV: false, showM: false };
 function reducer(state, action) {
+    console.log(action.type)
     switch (action.type) {
         case 'showF':
-            console.log(state)
             return { showF: !state.showF };
         case 'showV':
+            console.log('showV ' + state.showV)
             return { showV: !state.showV };
         case 'showM':
+            console.log( 'showM ' + state.showM)
             return { showM: !state.showM };
         default:
             throw new Error();

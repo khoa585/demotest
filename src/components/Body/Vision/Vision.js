@@ -9,7 +9,7 @@ function Vision() {
                 <div className="visionF">
                     <div className="accordion">
                         <div className="proFile_">
-                            <span className="name_V">vision </span>
+                            <span className="name_V">vision</span>
                             <ExpandMoreIcon className={`ExpandMoreIcon_V ${context.state_.showV === true ? 'showFrofile' : 'closeFrofile'}`} onClick={() => context.dispatchstate({ type: 'showV' })}></ExpandMoreIcon>
                         </div>
                         <div className={`panel_V ${context.state_.showV === true ? 'showPanel' : 'closePanel'}`}>
