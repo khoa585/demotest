@@ -6,46 +6,59 @@
 	margin: 0;
 }
 body{
-    background-image: url('https://storage.oxii.vn/Cache/Sites/OXII/Storage/Images/2019/10/22/1920/3-cach-tai-clash-of-clans-o-viet-nam-cho-android-va-ios-thumb.jpg');
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bgImg {
     height: 100vh;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    filter: blur(5px);
+    right: 0;
+    top: 0;
 }
-.container{
-    height: 15vh;
-    background: #000000a6;
-    padding-left: 0!important;
+.bgImg img{
+    width: 100%;
 }
+
 .header_{
+    display: flex;
+    background: #000000a6;
     height: 15vh;
+    align-items: center;
 }
 .wrapper{
-    height: 10vh;
     border-right: 1px solid #fff;
-    top:20px;
-    position: relative;
-}
-.wrapper_{
     height: 10vh;
-    border-right: 1px solid #fff;
-    top:20px;
-    position: relative;
-}
-li.nav-item {
-    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .meta__group {
+    left: -15px;
+    position: relative;
     color: #fff;
-    line-height: 60px;
     font-weight: 600;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+li.nav-item,.img-responsive{
+    cursor: pointer;
+}
+.logo_{
+    border-right: 1px solid #fff;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
 .content{
     color: #fff;
-    line-height: 60px;
     font-weight: 600;
-    left: 15%;
+    left: 25px;
+    z-index: 1;
     position: relative;
 }
 .content span{
@@ -58,34 +71,141 @@ li.nav-item {
 li.nav-item .active{
     border-bottom: 1px solid #fff;
 }
-.logo{
-    position: absolute;
-    right: 2%;
-    top: 10%;
-    cursor: pointer;
+img.img-responsive.fa-search {
+    height: 25px;
 }
 .search {
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 30%;
-}
-svg.MuiSvgIcon-root.fa-search {
-    font-size: 2.5em;
-    color: #fff;
-    cursor: pointer;
+    position: relative;
+    left: 15px;
 }
 .distant{
-    height: 50px;
+    position: relative;
+    top: 50px;
+    padding-left: 0!important;
 }
-
-.proF {
-    width: 500px;
-    left: 5%;
+.css-1fzpoyk {
+    left: 0%;
+    z-index: 1;
+}
+.Carousel{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    right: -10px;
+}
+.css-1fzpoyk img{
+    border-radius: 50px;
+}
+.ArrowBackIosIcon,.ArrowForwardIosIcon {
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
     position: relative;
 }
+.icon_{
+    text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.back {
+    position: relative;
+    right: 5%;
+}
+.next {
+    position: relative;
+    left: 5%;
+}
+.customF {
+    color: #fff;
+    top: 30px;
+    position: absolute;
+    font-size: 1em;
+    width: 100%;
+}
+.Icon{
+    width: 100%;
+    position: absolute;
+}
+.iconS{
+    width: 250px;
+}
+
+.fade-enter {
+    opacity: 1;
+    z-index: 1;
+    width: 70%;
+}
+.fade-enter-active {
+    opacity: 1;
+    width: 100%;
+    transition: .8s ;
+}
+.fade-exit {
+    opacity: 0;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: .8s ;
+}
+.ic-enter {
+    opacity: 1;
+    transform: translateY(20px);
+    z-index: 1;
+}
+.ic-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .8s ;
+}
+.ic-exit {
+    opacity: 0;
+}
+.ic-exit-active {
+    opacity: 0;
+    transition: .8s ;
+}
+.my-node-enter {
+    opacity: 1;
+}
+.my-node-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear , transform 500ms ease-in-out 100ms;
+}
+.my-node-exit {
+    opacity: 1;
+}
+.my-node-exit-active {
+    opacity: 0;
+    transition: opacity 300ms linear , transform 500ms ease-in-out 100ms;
+}
+.fontSlide{
+    animation: name .8s both;
+}
+@keyframes name{
+    from{font-size: 1em;}
+    to{font-size: 1.8em;}
+}
+.font_Slide{
+    animation: names .8s both;
+}
+@keyframes names{
+    from{font-size: 1em;}
+    to{font-size: 1.8em;}
+}
+
+
+.imgR{
+    width: 100%;
+    height: 100%;
+}
+
 .profile {
-    width: 95%;
+    width: 80%;
     background: #000000a6;
     color: #fff;
     padding: 10px 0;
@@ -95,27 +215,28 @@ svg.MuiSvgIcon-root.fa-search {
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: 700;
+    position: relative;
+    left: 40px;
 }
 .panel {
     height: 0;
     transition: 0.5s;
     overflow: hidden;
-    width: 450px;
+    width: 80%;
+}
+.panel span{
+        position: relative;
+        left: 40px;
 }
 svg.MuiSvgIcon-root.ExpandMoreIcon {
     font-size: 2em;
     position: relative;
     top: -5px;
-    left: 40px;
+    left: 60px;
     cursor: pointer;
 }
-.visionF {
-    width: 500px;
-    left: 5%;
-    position: relative;
-}
 .vision {
-    width: 95%;
+    width:80%;
     background: #000000a6;
     color: #fff;
     padding: 10px 0;
@@ -127,27 +248,18 @@ svg.MuiSvgIcon-root.ExpandMoreIcon {
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: 700;
-}
-.panel_V {
-    height: 0;
-    transition: 0.5s;
-    overflow: hidden;
-    width: 450px;
+    position: relative;
+    left: 40px;
 }
 svg.MuiSvgIcon-root.ExpandMoreIcon_V {
     font-size: 2em;
     position: relative;
     top: -5px;
-    left: 60px;
+    left: 80px;
     cursor: pointer;
 }
-.MissionM {
-    width: 500px;
-    left: 5%;
-    position: relative;
-}
 .Mission {
-    width: 95%;
+    width: 80%;
     background: #000000a6;
     color: #fff;
     padding: 10px 0;
@@ -159,18 +271,14 @@ svg.MuiSvgIcon-root.ExpandMoreIcon_V {
     text-transform: uppercase;
     font-size: 2.2em;
     font-weight: 700;
-}
-.panel_M {
-    height: 0;
-    transition: 0.5s;
-    overflow: hidden;
-    width: 450px;
+    left: 40px;
+    position: relative;
 }
 svg.MuiSvgIcon-root.ExpandMoreIcon_M {
     font-size: 2em;
     position: relative;
     top: -5px;
-    left: 45px;
+    left: 65px;
     cursor: pointer;
 }
 .showFrofile{
@@ -183,13 +291,11 @@ svg.MuiSvgIcon-root.ExpandMoreIcon_M {
 .showPanel{
     height: 200px;
     color: #fff;
-    animation: example 0.5s;
-    animation-fill-mode: both;
+    animation: example 0.5s both;
 }
 .closePanel{
     height: 0;
-    animation: examplee 0.5s;
-    animation-fill-mode: both;
+    animation: examplee 0.5s both;
 }
 @keyframes examplee{
     from{position: relative;top: 1px;opacity: 1;} 
@@ -198,4 +304,8 @@ svg.MuiSvgIcon-root.ExpandMoreIcon_M {
 @keyframes example{
     from{ position: relative;top: -30px;left:-10px;opacity: 0;}
 	to{position: relative;top: 0px;left:0;opacity: 1;} 
+}
+.distant{
+    position: relative;
+    top: 50px;
 }

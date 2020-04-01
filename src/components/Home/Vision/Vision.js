@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { statecontext } from './../Body';
+import { statecontext } from './../Home';
 function Vision() {
     const context = useContext(statecontext);
     return (
@@ -12,7 +12,7 @@ function Vision() {
                             <span className="name_V">vision</span>
                             <ExpandMoreIcon className={`ExpandMoreIcon_V ${context.state_.showV === true ? 'showFrofile' : 'closeFrofile'}`} onClick={() => context.dispatchstate({ type: 'showV' })}></ExpandMoreIcon>
                         </div>
-                        <div className={`panel_V ${context.state_.showV === true ? 'showPanel' : 'closePanel'}`}>
+                        <div className={`panel ${context.state_.showV === true ? 'showPanel' : 'closePanel'}`}>
                             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {statecontext} from './../Body';
+import {statecontext} from './../Home';
     function Profile() {
         const context = useContext(statecontext);
         return (
